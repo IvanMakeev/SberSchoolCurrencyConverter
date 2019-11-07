@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".presentation.ui.CurrencyConverterActivity">
+
+    <TextView
+        android:id="@+id/convert_from_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/default_padding"
+        android:text="@string/convert_from"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+    <Spinner
+        android:id="@+id/spinner_from"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/default_padding" />
+
+
+    <TextView
+        android:id="@+id/convert_to_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/default_padding"
+        android:text="@string/convert_to"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+    <Spinner
+        android:id="@+id/spinner_to"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/default_padding" />
+
+    <TextView
+        android:id="@+id/current_convert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        tools:text="dddddddddd" />
+
+    <EditText
+        android:id="@+id/enter_currency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/from_sum"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/convert_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/convert" />
+</LinearLayout>
